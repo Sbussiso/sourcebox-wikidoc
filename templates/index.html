@@ -47,6 +47,9 @@
         <h3>Chat with WikiBot</h3>
     </div>
     <div class="p-3">
+        <button type="button" id="backHome" class="btn btn-danger">Back to Home</button>
+    </div>
+    <div class="p-3">
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
               Use Pack Data
@@ -153,5 +156,9 @@
         alert('Conversation History Deleted');
     });
 
+    //back to home button logic
+    document.getElementById('backHome').addEventListener('click', function() {
+        window.location.href = 'https://sourcebox-official-website-9f3f8ae82f0b.herokuapp.com/'; //sourcebox home page
+    });
 </script>
 {% endblock %}
